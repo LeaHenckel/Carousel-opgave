@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carusel opgave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+  <div class="carousel">
+    <div class="carousel-container">
+
+      <div class="carousel-item active" id="CarouselImage1" style="transform: translateX(-100%)">
+        <h1>Lorem, ipsum.</h1>
+        <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium tenetur, provident minima perferendis atque necessitatibus?</em><br><br></p>
+        <button id="go-to-slide-3" class="next"> CLICK </button>
+        <br><br><br><br>
+      </div>
+
+      <div class="carousel-item" id="CarouselImage2" style="transform: translateX(-100%)">
+        <h1>Lorem, ipsum dolor.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+          Dolor ab beatae accusantium delectus placeat eius, pariatur qui nihil fugit voluptates nisi odit repellat libero magni asperiores totam labore esse quod porro! 
+          Praesentium, laudantium culpa voluptas quod nihil numquam assumenda minima! 
+          Expedita esse possimus omnis ullam doloribus qui porro libero aliquid laudantium non consequuntur mollitia, nostrum quaerat ipsam temporibus, eveniet alias.</p>
+      </div>
+        
+      <div class="carousel-item" id="CarouselImage3" style="transform: translateX(-100%)">
+        <h1>Lorem ipsum dolor sit amet consectetur. </h1>
+      </div>
+        
+      <div class="carousel-item" id="CarouselImage4" style="transform: translateX(-100%)">
+        <h1>Lorem, ipsum dolor.</h1>
+      </div>
+        
+      <div class="carousel-item" id="CarouselImage5" style="transform: translateX(-100%)">
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing.</h1>
+        <p><em>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+          Odio soluta exercitationem expedita esse ea, mollitia ab sapiente provident sunt et at tempora quia ad! Earum, temporibus!</em></p>
+      </div>
+    
+    </div>
+
+      <!-- Nedenstående er bullets og slider navigation -->
+      <!-- Skulle jeg måske have lavet dette til en NAV i stedet for DIV?? -->
+    <div class="carousel-nav">
+      <button class="prev">&#10094;</button>
+      <div class="carousel-bullets">
+        <span class="carousel-bullet active"></span>
+        <span class="carousel-bullet"></span>
+        <span class="carousel-bullet"></span>
+        <span class="carousel-bullet"></span>
+        <span class="carousel-bullet"></span>
+      </div>
+      <button class="next" onclick="goToNext()"> &#10095; </button>
+    </div>
+      
+
+<script src="script.js" defer></script>
+</body>
+</html>
